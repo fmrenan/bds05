@@ -21,7 +21,7 @@ public class Genre implements Serializable{
 	private Long id;
 	private String name;
 	
-	@OneToMany(mappedBy = "movie")
+	@OneToMany(mappedBy = "genre")
 	private Set<Movie> movies = new HashSet<>();
 	
 	public Genre() {}
